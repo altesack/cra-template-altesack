@@ -1,6 +1,8 @@
 {
   "package": {
     "scripts": {
+      "eslint": "eslint --ext .jsx,.js,.tsx,.ts --fix src",
+      "eslint-check": "eslint --ext .jsx,.js,.tsx,.ts src",
       "prettier": "prettier --write ./"
     },
     "dependencies": {
@@ -12,8 +14,15 @@
       "@types/react": "^18.0.0",
       "@types/react-dom": "^18.0.0",
       "typescript": "^4.4.2",
-      "prettier": "^2.5.1",
       "web-vitals": "^2.1.0"
+    },
+    "devDependencies": {
+      "@typescript-eslint/eslint-plugin": "^5.32",
+      "@typescript-eslint/parser": "^5.32",
+      "eslint": "^7.32.0",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-plugin-react": "^7.28.0",
+      "prettier": "^2.5.1"
     },
     "eslintConfig": {
       "extends": ["react-app", "react-app/jest"]

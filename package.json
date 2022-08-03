@@ -6,7 +6,8 @@
     "create-react-app",
     "template",
     "typescript",
-    "prettier"
+    "prettier",
+    "eslinter"
   ],
   "description": "This is just my react boilerplate to play with.",
   "repository": {
