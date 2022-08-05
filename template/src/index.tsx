@@ -7,16 +7,16 @@ import { PageOne } from './pages/PageOne';
 import { PageTwo } from './pages/PageTwo';
 
 const root = ReactDOM.createRoot(
-    document.getElementById('root') as HTMLElement,
+  document.getElementById('root') as HTMLElement,
 );
 root.render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<App />} />
-                <Route path="page1" element={<PageOne />} />
-                <Route path="page2" element={<PageTwo />} />
-            </Routes>
-        </BrowserRouter>
-    </React.StrictMode>,
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="page1" element={<PageOne />} />
+        <Route path="page2" element={<PageTwo />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>,
 );
