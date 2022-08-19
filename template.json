@@ -1,8 +1,8 @@
 {
   "package": {
     "scripts": {
-      "eslint": "eslint --ext .jsx,.js,.tsx,.ts --fix src",
-      "eslint-check": "eslint --ext .jsx,.js,.tsx,.ts src"
+      "eslint": "eslint --cache --ext .jsx,.js,.tsx,.ts --fix src",
+      "eslint-check": "eslint --cache --ext .jsx,.js,.tsx,.ts src"
     },
     "dependencies": {
       "@testing-library/jest-dom": "^5.14.1",
