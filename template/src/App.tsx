@@ -1,30 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { PageOne } from './pages/PageOne';
+import { PageTwo } from './pages/PageTwo';
+import { Home } from "./pages/Home";
 
 function App(): JSX.Element {
-  return (
-    <Container>
-      <Row>
-        <Col>
-          <h1>Application home</h1>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Button href={'https://reactjs.org'}>Learn React</Button>
-        </Col>
-        <Col>
-          <Button href={'/'}>Home</Button>
-        </Col>
-        <Col>
-          <Button href={'/page1'}>Page One</Button>
-        </Col>
-        <Col>
-          <Button href={'/page2'}>Page Two</Button>
-        </Col>
-      </Row>
-    </Container>
-  );
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="page1" element={<PageOne />} />
+                <Route path="page2" element={<PageTwo />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
