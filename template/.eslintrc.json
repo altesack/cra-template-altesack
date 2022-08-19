@@ -17,26 +17,46 @@
     "node": true,
     "es2021": true
   },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": 12,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": ["tsconfig.json"]
   },
   "plugins": [
-    "react"
+    "react",
+    "promise",
+    "import",
+    "n"
   ],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/jsx-runtime",
-    "prettier"
+    "plugin:promise/recommended",
+    "plugin:n/recommended",
+    "plugin:import/recommended",
+    "standard-with-typescript"
   ],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "error",
     "@typescript-eslint/no-non-null-assertion": "error",
-    "curly": "error"
+    "@typescript-eslint/triple-slash-reference": "off",
+    "curly": "error",
+    "n/no-unsupported-features/es-syntax": [
+      "error",
+      { "ignores": ["modules"] }
+    ],
+    "n/no-missing-import": "off"
   }
 }
