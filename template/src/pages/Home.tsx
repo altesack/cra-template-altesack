@@ -1,10 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import {Icon} from "./Icon";
 
 export const Home = (): JSX.Element => {
   return (
       <Container>
         <Row>
+          <Col md={1}>
+            <h1><Icon name={'house-door'}/></h1>
+          </Col>
           <Col>
             <h1>Application home</h1>
           </Col>
