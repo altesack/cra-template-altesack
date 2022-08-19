@@ -1,4 +1,4 @@
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap'
 
 export const PageOne = (): JSX.Element => {
   return (
@@ -23,5 +23,5 @@ export const PageOne = (): JSX.Element => {
         </Col>
       </Row>
     </Container>
-  );
-};
+  )
+}

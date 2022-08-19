@@ -1,9 +1,0 @@
-build/
-node_modules/
-package-lock.json
-yarn.lock
-coverage
-*.html
-*.css
-*.json
-*.md

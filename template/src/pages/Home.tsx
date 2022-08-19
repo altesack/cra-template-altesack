@@ -1,6 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Col, Container, Row } from 'react-bootstrap';
-import {Icon} from "./Icon";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Button, Col, Container, Row } from 'react-bootstrap'
+import {Icon} from "./Icon"
 
 export const Home = (): JSX.Element => {
   return (
@@ -28,5 +28,5 @@ export const Home = (): JSX.Element => {
           </Col>
         </Row>
       </Container>
-  );
+  )
 }
